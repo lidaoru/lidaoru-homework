@@ -1,0 +1,5 @@
+*1、 缩略词  <abbr title="etcetera">etc.</abbr>*
+
+**2、标签被用来组合文档中的行内元素 <p><span>some text.</span>some other text.</p>**
+
+3、代码*标记*了一个按钮<button type="button">Click Me!</button>
