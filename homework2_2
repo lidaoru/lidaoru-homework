@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>北大附中</title>
+  </head>
+  <body>
+    <p>北大附中简介</p>
+    <p><a href=http://www.pkuschool.edu.cn>学校官网</a></p>
+<ul>
+	 <li>创办：1960年</li>
+	 <li>校长：王铮</li>
+	 <li>校训：勤奋，严谨，求实，创新</li>	
+</ul>
+<ol>书院分类
+	<li>行知书院</li>
+    <li>元培书院</li>
+	<li>新民书院</li>
+	<li>道尔顿书院</li>
+</ol>
+<table>
+	  <tr>
+		<th>单元号</th>
+		<th>书院名称</th>
+		<th>书院性质</th>
+	  </tr>
+	  <tr>
+		<td>1</td>
+		<td>格物书院</td>
+		<td>行知学院</td>
+	  </tr>
+	  <tr>
+		<td>2</td>
+		<td>致知书院</td>
+		<td>行知学院</td>
+	  </tr>
+	  <tr>
+		<td>3</td>
+		<td>诚意书院</td>
+		<td>行知学院</td>
+	  </tr>
+	  <tr>
+		<td>4</td>
+		<td>正心书院</td>
+		<td>行知学院</td>
+	  </tr> 
+	  <tr>
+		<td>5</td>
+		<td>明德书院</td>
+		<td>元培学院</td>
+	  </tr> 
+	  <tr>
+		<td>6</td>
+		<td>至善书院</td>
+		<td>新民学院</td>
+	  </tr> 
+	  <tr>
+		<td>7</td>
+		<td>新民书院</td>
+		<td>道尔顿学院</td>
+	  </tr>
+	</table>
+<img src=http://s13.sinaimg.cn/middle/51e1a420ta0e5927c02fc&690 />
+</body>
+</html>
