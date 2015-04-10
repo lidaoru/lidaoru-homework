@@ -1,0 +1,25 @@
+class Prime_generate
+  @@uppern = 0
+  
+  def is_prime(n)
+    return false if n < 2 
+    for d in 2..(Math.sqrt(n)) 
+	  return false if (n % d) == 0
+    end
+    puts n
+    #true 
+  end
+
+  def print_prime(uppern)
+    for n in 2..uppern
+      is_prime(n)
+	end
+  end
+   
+  def initialize(ncount)
+    @uppern=ncount
+	print_prime(@uppern)
+  end
+end
+
+Prime_generate.new(100000)
