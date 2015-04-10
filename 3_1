@@ -1,0 +1,9 @@
+def is_p(n)
+  return false if n < 2 
+  for d in 2..(Math.sqrt(n)) 
+	return false if (n % d) == 0
+  end
+  true
+end
+
+puts is_p(7)
