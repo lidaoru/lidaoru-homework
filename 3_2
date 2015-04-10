@@ -1,14 +1,24 @@
-def prime_generator(n)
+require "open-uri"
 
-  (2..n).each do |i|
-    (2..(Math.sqrt(i).ceil)).each do |thing|
-      state = 1
-      if (i.divmod(thing)[1] == 0)
-         state = 0
-         break
-      end
-   end
-   puts "#{i}\," unless (state == 0)
-end 
 
-prime_generaotr(10000)
+s2 = []
+s2[0] = 'http://en.wikipedia.org/wiki/Battle_of_the_Lys_(1918)'
+s2[1] = 'http://en.wikipedia.org/wiki/Herbert_Plumer,_1st_Viscount_Plumer'
+s2[2] = 'http://en.wikipedia.org/wiki/Field_marshal_(United_Kingdom)'
+s2[3] = 'http://en.wikipedia.org/wiki/Wilhelm_II,_German_Emperor'
+s2[4] = 'http://en.wikipedia.org/wiki/Paul_von_Hindenburg'
+s2[5] = 'http://en.wikipedia.org/wiki/Braunau_am_Inn'
+s2[6] = 'http://en.wikipedia.org/wiki/Braunau_am_Inn#Economy'
+s2[7] = 'http://en.wikipedia.org/wiki/Edmund_Glaise-Horstenau'
+s2[8] = 'http://en.wikipedia.org/wiki/Edmund_Glaise-Horstenau#Croatia'
+s2[9] = 'http://en.wikipedia.org/wiki/Ante_Paveli%C4%87'
+
+for i in 0..9
+  data1 = open(s2[i]){|f| f.read}
+  #puts data1
+  words = data1.split(/\s+/).inject({}) { |h, w| 
+    h[w.upcase] ||=0
+    h[w.upcase] += 1
+    h
+  }.sort_by { |k, v| -v }.each { |w, f| puts "#{w}: #{f}"}
+end
